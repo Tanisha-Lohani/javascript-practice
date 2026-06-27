@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>form validatin</title>
+        <script type>"text/javascript"
+            function validate(){
+                if(document.myform.Email.value==""){
+                    alert("Please provide your Email ID")
+                    document.myFrom.Email.focus()
+                    return false
+
+                }else if(document.myform.password.value==""){
+            alert("Please provide your password")
+                    document.myFrom.password.focus()
+                    return false
+                }
+                else{
+                    return true
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <form action="message.html" name="myForm"onsubmit="return(Validate());">
+            <input name=Email placeholder="Email" type="text"><br>
+            <input name=Password placeholder="Password" type="text"><br>
+            <button type="Submit">Submit</button>
+        </form>
+    </body>
+</html>

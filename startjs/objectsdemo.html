@@ -1,0 +1,63 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            // create object using object literal
+            document.write("<h3>object literal Demo</h3>");
+            var student={id:1,Name:"Ram",Class:7};
+            document.write(
+                "student id= "+
+                student.id +
+                "<br> student Name= "+
+                student.Name +
+                "<br> student Class= "+
+                student.Class 
+            );
+
+            // create object using literal
+            document.write("<h3>object new keyword</h3>");
+            var employee= new Object();
+
+            employee.id=101;
+            employee.name="radha";
+            employee.salary=40000;
+
+            document.write(
+                "employee id= "+
+                employee.id +
+                "<br> employee name="+
+                employee.name+
+                "<br> employee.salary="+
+                employee.salary
+            );
+
+            // create object usnig constructor
+            document.write("<h3>object using consractor</h3>");
+            function Scientist (id,name,branch){
+                this.id=id;
+                this.name=name;
+                this.branch=branch
+            };
+           let Scientist1=new Scientist(2010,"sohan","physics");
+           let Scientist2=new Scientist(3012,"rohan","IT");
+            document.write(
+                 "Scientist1 id= "+
+                Scientist1.id +
+                "<br> Scientist1 name="+
+                Scientist1.name+
+                "<br> Scientist1.branch="+
+                Scientist1.branch
+            );
+             document.write(
+                 " <br> Scientist2 id= "+
+                Scientist2.id +
+                "<br> Scientist2 name="+
+                Scientist2.name+
+                "<br> Scientist2.branch="+
+                Scientist2.branch
+            );
+        </script>
+    </body>
+</html>
